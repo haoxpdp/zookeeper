@@ -18,8 +18,6 @@
 
 package org.apache.zookeeper.cli;
 
-import static java.nio.charset.StandardCharsets.UTF_8;
-import java.util.List;
 import org.apache.commons.cli.CommandLine;
 import org.apache.commons.cli.DefaultParser;
 import org.apache.commons.cli.Option;
@@ -31,6 +29,10 @@ import org.apache.zookeeper.ZooDefs;
 import org.apache.zookeeper.data.ACL;
 import org.apache.zookeeper.data.Stat;
 import org.apache.zookeeper.server.EphemeralType;
+
+import java.util.List;
+
+import static java.nio.charset.StandardCharsets.UTF_8;
 
 /**
  * create command for cli

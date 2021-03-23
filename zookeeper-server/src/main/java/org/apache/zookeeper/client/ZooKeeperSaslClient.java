@@ -58,12 +58,13 @@ public class ZooKeeperSaslClient {
      */
     @Deprecated
     public static final String ENABLE_CLIENT_SASL_KEY = "zookeeper.sasl.client";
+
     /**
      * @deprecated Use {@link ZKClientConfig#ENABLE_CLIENT_SASL_DEFAULT}
      *             instead.
      */
     @Deprecated
-    public static final String ENABLE_CLIENT_SASL_DEFAULT = "true";
+    public static final String ENABLE_CLIENT_SASL_DEFAULT = "false";
     private volatile boolean initializedLogin = false;
 
     /**

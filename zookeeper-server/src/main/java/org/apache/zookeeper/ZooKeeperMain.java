@@ -53,7 +53,7 @@ import org.slf4j.LoggerFactory;
 
 /**
  * The command line client to ZooKeeper.
- *
+ * zk 客户端命令行
  */
 @InterfaceAudience.Public
 public class ZooKeeperMain {

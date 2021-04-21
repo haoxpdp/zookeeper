@@ -121,6 +121,7 @@ public class ZooKeeperServerMain {
      */
     public void runFromConfig(ServerConfig config) throws IOException, AdminServerException {
         LOG.info("Starting server");
+        // 数据管理器
         FileTxnSnapLog txnLog = null;
         try {
             try {

@@ -48,11 +48,15 @@ import org.slf4j.LoggerFactory;
  * above the implementations
  * of txnlog and snapshot
  * classes
+ * zookeeper的数据的持久化主要是依赖两种文件，第一种是snapshot快照文件，一种是log日志文件。
+ * 对于snapshot文件存储的是这个DataTree和session内存的快照，
+ * 对于log文件则是顺序存储的事务日志。
  */
 public class FileTxnSnapLog {
 
     //the directory containing the
     //the transaction logs
+    //
     final File dataDir;
     //the directory containing the
     //the snapshot directory
